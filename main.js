@@ -16,19 +16,49 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
+/**
+ * this function converts number to a string
+ * @param n1 
+ * @returns string1 
+ */
+
+function convertToString (n1) {
+  const string1 = n1.toString();
+  return string1;
+}
+
+console.log(convertToString(5));
+
+// without using function 
+
 const num1 = 11;
 const string1 = num1.toString();
 console.log(string1);
-console.log(typeof(string1));
+console.log("new type is" + " " + typeof(string1));
 
+//-------------------------
 // Write a JavaScript program to convert a string to the number.
+
+/**
+ * this function converts a string to a number
+ * @param  str 
+ * @returns num1
+ */
+function convertToNumber(str) {
+  const num1 = parseInt(str);
+  return num1;
+}
+
+console.log(convertToNumber(50));
+
+// without using function 
 
 const string2 = "12";
 const num2 = parseInt(string2);
 console.log(num2);
-console.log(typeof(num2));
+console.log("new type is" + " " + typeof(num2));
 
-
+//-------------------------
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
   // * Null
@@ -37,13 +67,19 @@ console.log(typeof(num2));
   // * NaN
   // * String
   
+ /**
+  * this function returns the data type of value passed
+  * @param {*} x 
+  */ 
 function input(x) {
   console.log(typeof(x));
 }
 
+input(true);
 input(3);
+input("hello");
 
-
+//-------------------------
 // Write a JavaScript program that adds 2 numbers together.
 
 function add(n1, n2) {
@@ -53,6 +89,7 @@ function add(n1, n2) {
 
 console.log(add (1,2));
 
+//-------------------------
 // Write a JavaScript program that runs only when 2 things are true.
 
 function checkIfBothTrue (n1, n2) {
@@ -63,7 +100,7 @@ function checkIfBothTrue (n1, n2) {
 
 console.log(checkIfBothTrue(true,true));
 
-
+//-------------------------
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
 function checkIfOneTrue (n1,n2) {
