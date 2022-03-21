@@ -69,7 +69,7 @@ console.log("new type is" + " " + typeof(num2));
   
  /**
   * this function returns the data type of value passed
-  * @param {*} x 
+  * @param x 
   */ 
 function input(x) {
   console.log(typeof(x));
@@ -82,6 +82,11 @@ input("hello");
 //-------------------------
 // Write a JavaScript program that adds 2 numbers together.
 
+ /**
+  * this function add two numbers
+  * @param n1 n2
+  * @returns n3
+  */ 
 function add(n1, n2) {
   const n3 = n1 + n2;
   return n3;
@@ -92,6 +97,11 @@ console.log(add (1,2));
 //-------------------------
 // Write a JavaScript program that runs only when 2 things are true.
 
+ /**
+  * this function checks if both parameters are true
+  * @param n1 n2
+  * @returns n3
+  */ 
 function checkIfBothTrue (n1, n2) {
   if (n1 == true && n2 == true){
     return "both are true"
@@ -103,6 +113,11 @@ console.log(checkIfBothTrue(true,true));
 //-------------------------
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+ /**
+  * this function checks if one of the parameters are true
+  * @param n1 n2
+  * @returns n3
+  */ 
 function checkIfOneTrue (n1,n2) {
   if (n1 == true || n2 == true) {
     return "one of them is true"
