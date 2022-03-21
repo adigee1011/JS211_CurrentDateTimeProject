@@ -16,10 +16,17 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
-
+const num1 = 11;
+const string1 = num1.toString();
+console.log(string1);
+console.log(typeof(string1));
 
 // Write a JavaScript program to convert a string to the number.
 
+const string2 = "12";
+const num2 = parseInt(string2);
+console.log(num2);
+console.log(typeof(num2));
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -30,18 +37,42 @@ const displayDate = () => {
   // * NaN
   // * String
   
+function input(x) {
+  console.log(typeof(x));
+}
 
-  
+input(3);
+
+
 // Write a JavaScript program that adds 2 numbers together.
 
+function add(n1, n2) {
+  const n3 = n1 + n2;
+  return n3;
+}
 
+console.log(add (1,2));
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+function checkIfBothTrue (n1, n2) {
+  if (n1 == true && n2 == true){
+    return "both are true"
+  }
+}
+
+console.log(checkIfBothTrue(true,true));
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+function checkIfOneTrue (n1,n2) {
+  if (n1 == true || n2 == true) {
+    return "one of them is true"
+  }
+}
+
+console.log(checkIfOneTrue(true,false));
 
 
 // Write a JavaScript program that runs when both things are not true.  
